@@ -16,6 +16,36 @@ npm run dev
 
 Abra o endereço mostrado pelo Vite — normalmente `http://localhost:5173`.
 
+## Rodar com Docker
+
+É a opção recomendada para publicar em um computador ou servidor local.
+
+```bash
+# Crie o arquivo de configuração da porta.
+cp .env.example .env
+
+# Suba em segundo plano; por padrão, abre em http://localhost:8080.
+docker compose up -d --build
+```
+
+Para escolher outra porta, edite `.env` antes de subir:
+
+```env
+MENU_PORT=3000
+```
+
+Então o sistema ficará disponível em `http://IP_DO_SERVIDOR:3000` (por exemplo, na rede local).
+
+Comandos úteis:
+
+```bash
+docker compose logs -f       # acompanha os logs
+docker compose down          # para e remove o container
+docker compose up -d --build # recria depois de atualizar o código
+```
+
+> No Windows, se o comando `cp` não estiver disponível, copie `.env.example`, renomeie a cópia para `.env` e altere `MENU_PORT` nela.
+
 ## Como usar
 
 1. Preencha nome da marca, título, subtítulo e contato.

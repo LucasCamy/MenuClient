@@ -1,0 +1,10 @@
+services:
+  menu:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: doce-menu
+    ports:
+      # Altere MENU_PORT no arquivo .env ou execute MENU_PORT=3000 docker compose up -d.
+      - "${MENU_PORT:-8080}:80"
+    restart: unless-stopped

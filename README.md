@@ -46,6 +46,20 @@ docker compose up -d --build # recria depois de atualizar o código
 
 > No Windows, se o comando `cp` não estiver disponível, copie `.env.example`, renomeie a cópia para `.env` e altere `MENU_PORT` nela.
 
+## Personalização visual
+
+Além dos textos, fotos e preços, a cliente pode montar a identidade visual do cardápio combinando:
+
+- 6 modelos de composição: Clássico delicado, Editorial, Impacto doce, Romântico, Contemporâneo e Artesanal;
+- 10 paletas prontas, com ajuste manual de fundo, texto, destaque e cards;
+- 10 padrões de fundo, como Confetes, Ondas, Botânico, Granulado, Fitas e Mármore;
+- imagem própria de fundo com controle de transparência;
+- título centralizado, alinhado à esquerda ou em faixa de destaque;
+- cards em duas colunas, uma coluna ou modo compacto;
+- seis estilos de card: Suave, Contorno, Minimalista, Elevado, Etiqueta e Dividido.
+
+As escolhas são refletidas na prévia ao vivo e persistem no navegador. O PDF respeita a paleta, a estrutura, os cards, o cabeçalho e os fundos disponíveis.
+
 ## Como usar
 
 1. Preencha nome da marca, título, subtítulo e contato.
